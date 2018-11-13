@@ -429,6 +429,19 @@ client.on("message", async message => {
         }
 
     }
+
+    if (command === "christmas"){
+        var eigenTijd = new Date();
+        var kerst = new Date(2018,12-1,24) //24 is kerstavond datch ik toch
+        var eigenDag = eigenTijd.getDate();
+        var kerstAvond = kerst.getDate();
+
+        var dagenTussen = kerstAvond - eigenDag;
+
+        message.channel.send(`${dagenTussen}`);
+
+
+    }
 });
 
 client.login(config.token);
