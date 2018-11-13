@@ -2,7 +2,7 @@
 
 const Discord = require("discord.js");
 const client = new Discord.Client();
-const config = require("./gitignore.json");
+const config = require("./configure.json");
 
 client.on("ready", () => {
     console.log("I am ready, master.");
